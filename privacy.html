@@ -6,71 +6,55 @@
     <title>Privacy Policy - FedNote</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
     <style>
-        :root {
-            --polemics-blue: rgb(83, 103, 148);
-            --polemics-red: rgb(147, 83, 83);
-            --polemics-text-grey: #585858;
-            --polemics-light-grey: #E8E8E8;
+        body {
+            background-color: rgb(83, 103, 148);
+            color: white;
         }
-        .bg-polemics-blue { background-color: var(--polemics-blue); }
-        .text-polemics-blue { color: var(--polemics-blue); }
-        .border-polemics-blue { border-color: var(--polemics-blue); }
-        .bg-polemics-red { background-color: var(--polemics-red); }
-        .text-polemics-grey { color: var(--polemics-text-grey); }
-        .bg-polemics-light { background-color: var(--polemics-light-grey); }
+        nav {
+            background-color: rgb(63, 83, 128);
+        }
+        footer {
+            background-color: rgb(63, 83, 128);
+        }
     </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Navigation Banner -->
-    <nav class="bg-polemics-blue text-white">
+<body>
+    <nav class="text-white py-4">
         <div class="container mx-auto px-6">
-            <div class="flex justify-between items-center h-16">
-                <span class="text-xl font-semibold">FedNote</span>
-                <div class="flex space-x-8">
-                    <a href="index.html" class="hover:text-gray-200 transition">Home</a>
-                    <a href="privacy.html" class="hover:text-gray-200 transition">Privacy</a>
-                </div>
+            <div class="flex justify-center space-x-8">
+                <a href="index.html" class="hover:text-gray-300">Home</a>
+                <a href="apps.html" class="hover:text-gray-300">Apps</a>
+                <a href="privacy.html" class="hover:text-gray-300">Privacy Statement</a>
             </div>
         </div>
     </nav>
 
-    <!-- Privacy Content -->
-    <main class="py-20">
-        <div class="container mx-auto px-6">
-            <div class="max-w-3xl mx-auto">
-                <h1 class="text-4xl font-bold mb-12 text-polemics-blue">Privacy Policy</h1>
-                
-                <div class="space-y-8 text-polemics-grey">
-                    <p>
-                        [Privacy Policy content to be updated]
+    <main class="container mx-auto px-6 py-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-12">Privacy Policy</h1>
+            <p class="text-xl leading-relaxed mb-8">
+                This Privacy Policy governs the use of software applications ("Applications") developed by FedNote, including all related tools and services.
+            </p>
+            <div class="space-y-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-4">Overview</h2>
+                    <p class="text-xl leading-relaxed">
+                        At FedNote, we take privacy seriously. Our Applications are designed as documentation tools for federal workers, with a focus on complete data privacy and security. We do not collect, store, or transmit any personal user data from these Applications.
                     </p>
-                    
-                    <div>
-                        <h2 class="text-2xl font-semibold text-polemics-blue mb-4">Data Collection</h2>
-                        <p>
-                            FedNote is designed with a strict no-data-collection policy. The application operates entirely offline and stores all data locally on your device.
-                        </p>
-                    </div>
-
-                    <div>
-                        <h2 class="text-2xl font-semibold text-polemics-blue mb-4">Data Storage</h2>
-                        <p>
-                            All your documents, logs, and other information are stored locally on your device. We have no access to your data and no ability to view or collect it.
-                        </p>
-                    </div>
-
-                    <p class="text-sm mt-16">
-                        Last updated: February 19, 2025
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-4">User Provided Information</h2>
+                    <p class="text-xl leading-relaxed">
+                        No personal information is collected. Any data you enter into the Application remains solely on your device and is never transmitted to us or shared with third parties. If an Application includes functionality that allows you to generate documents or emails, that information is only used locally within your device and not collected by us.
                     </p>
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-polemics-blue text-white py-6">
+    <footer class="fixed bottom-0 w-full text-white py-4">
         <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2025 FedNote. All rights reserved.</p>
+            <p>Contact us at fednote@yahoo.com | Follow us on X</p>
         </div>
     </footer>
 </body>
