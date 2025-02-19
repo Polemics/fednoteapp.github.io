@@ -3,101 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FedNote - Essential Documentation Tool for Federal Workers</title>
-    <meta name="description" content="FedNote is a secure, offline-first documentation tool designed specifically for Federal workers affected by workforce transitions.">
+    <title>FedNote</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
     <style>
-        :root {
-            --polemics-blue: rgb(83, 103, 148);
-            --polemics-red: rgb(147, 83, 83);
-            --polemics-text-grey: #585858;
-            --polemics-light-grey: #E8E8E8;
+        body {
+            background-color: rgb(83, 103, 148);
+            color: white;
         }
-        .bg-polemics-blue { background-color: var(--polemics-blue); }
-        .text-polemics-blue { color: var(--polemics-blue); }
-        .border-polemics-blue { border-color: var(--polemics-blue); }
-        .bg-polemics-red { background-color: var(--polemics-red); }
-        .text-polemics-grey { color: var(--polemics-text-grey); }
-        .bg-polemics-light { background-color: var(--polemics-light-grey); }
+        nav {
+            background-color: rgb(63, 83, 128);
+        }
+        footer {
+            background-color: rgb(63, 83, 128);
+        }
     </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Navigation Banner -->
-    <nav class="bg-polemics-blue text-white">
+<body>
+    <nav class="text-white py-4">
         <div class="container mx-auto px-6">
-            <div class="flex justify-between items-center h-16">
-                <span class="text-xl font-semibold">FedNote</span>
-                <div class="flex space-x-8">
-                    <a href="index.html" class="hover:text-gray-200 transition">Home</a>
-                    <a href="privacy.html" class="hover:text-gray-200 transition">Privacy</a>
-                </div>
+            <div class="flex justify-center space-x-8">
+                <a href="index.html" class="hover:text-gray-300">Home</a>
+                <a href="apps.html" class="hover:text-gray-300">Apps</a>
+                <a href="privacy.html" class="hover:text-gray-300">Privacy Statement</a>
             </div>
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <section class="bg-polemics-blue text-white py-32">
-            <div class="container mx-auto px-6 text-center">
-                <h1 class="text-5xl font-bold mb-8">Document. Protect. Prepare.</h1>
-                <p class="text-xl max-w-2xl mx-auto mb-8">
-                    Your essential documentation tool for federal workforce transitions. Secure, offline, and designed specifically for Federal workers navigating career changes.
-                </p>
-                <div class="bg-white text-polemics-blue font-semibold py-3 px-8 rounded inline-block hover:bg-gray-100 transition">
-                    Coming Soon to App Store
-                </div>
-            </div>
-        </section>
-
-        <!-- Features Section -->
-        <section class="py-20">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center mb-16 text-polemics-blue">Key Features</h2>
-                <div class="grid md:grid-cols-3 gap-12">
-                    <div class="text-center">
-                        <h3 class="text-xl font-bold mb-4 text-polemics-blue">Event Logger</h3>
-                        <p class="text-polemics-grey">Comprehensive chronological tracking of all workplace events, communications, and policy changes.</p>
-                    </div>
-                    <div class="text-center">
-                        <h3 class="text-xl font-bold mb-4 text-polemics-blue">Document Management</h3>
-                        <p class="text-polemics-grey">Secure, offline storage for all your important documents, communications, and evidence.</p>
-                    </div>
-                    <div class="text-center">
-                        <h3 class="text-xl font-bold mb-4 text-polemics-blue">Legal Support</h3>
-                        <p class="text-polemics-grey">Built-in templates and tools for creating sworn declarations and organizing evidence.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Privacy Highlight -->
-        <section class="bg-polemics-light py-20">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold mb-8 text-polemics-blue">Complete Privacy</h2>
-                <p class="text-xl text-polemics-grey max-w-2xl mx-auto">
-                    100% offline functionality. Your data never leaves your device. No cloud storage, no data collection, no external connections.
-                </p>
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section class="py-20">
-            <div class="container mx-auto px-6 text-center">
-                <div class="space-y-4">
-                    <a href="mailto:fednote@yahoo.com" class="text-polemics-blue hover:text-polemics-red transition">fednote@yahoo.com</a>
-                    <div>
-                        <a href="https://twitter.com/FedNoteApp" class="text-polemics-blue hover:text-polemics-red transition">@FedNoteApp</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <main class="container mx-auto px-6 py-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-12">FedNote</h1>
+            <p class="text-xl leading-relaxed">
+                Your essential documentation tool for federal workforce transitions. We're a federal worker-focused technology platform bridging the gap between frontline needs and institutional solutions. Through innovative mobile apps, practical resources, and community engagement, we empower federal employees to navigate their careers, access vital resources, and build stronger support networks. Our mission is to amplify worker voices and drive positive change through practical, technology-driven solutions.
+            </p>
+        </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-polemics-blue text-white py-6">
+    <footer class="fixed bottom-0 w-full text-white py-4">
         <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2025 FedNote. All rights reserved.</p>
+            <p>Contact us at fednote@yahoo.com | Follow us on X</p>
         </div>
     </footer>
 </body>
