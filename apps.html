@@ -1,47 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apps - FedNote</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>FedNote - Apps</title>
     <style>
         body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
             background-color: rgb(83, 103, 148);
-            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #E8E8E8;
         }
-        nav {
-            background-color: rgb(63, 83, 128);
+
+        header {
+            background: rgba(0,0,0,0.3);
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
+
+        nav a {
+            color: #E8E8E8;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
         footer {
-            background-color: rgb(63, 83, 128);
+            text-align: center;
+            background: rgba(0,0,0,0.3);
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #E8E8E8;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <nav class="text-white py-4">
-        <div class="container mx-auto px-6">
-            <div class="flex justify-center space-x-8">
-                <a href="index.html" class="hover:text-gray-300">Home</a>
-                <a href="apps.html" class="hover:text-gray-300">App</a>
-                <a href="privacy.html" class="hover:text-gray-300">Privacy Statement</a>
-            </div>
-        </div>
-    </nav>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="apps.html">App</a>
+            <a href="privacy.html">Privacy Statement</a>
+        </nav>
+    </header>
 
-    <main class="container mx-auto px-6 py-20">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-5xl font-bold mb-12">Our Apps</h1>
-            <p class="text-xl leading-relaxed">
-                At FedNote, we're dedicated to empowering federal workers through practical tools. We build apps that cut through administrative complexity, help workers document important events, and improve overall career protection. From specialized documentation tools to forms and records managers, our solutions streamline daily tasks, enhance preparedness, and ensure you spend more time focusing on what matters most.
-            </p>
-        </div>
+    <main>
+        <h1>Our App</h1>
+        <p>
+            At FedNote, we're dedicated to empowering federal employees facing workforce transitions. We've built an essential tool that cuts through administrative complexity, helps workers document important events, and improves overall career protection. Our comprehensive documentation and tracking solution streamlines the process of recording workplace events, managing communications, and preparing for potential proceedings.
+        </p>
+        
+        <p>
+            FedNote is designed with real-world feedback, continuously refined based on federal worker experiences, and built on a foundation of trust, utility, and respect for your privacy and professional needs. Whether you're a senior employee or new to federal service, our app gives you the tools to protect your career and document what matters most.
+        </p>
+
+        <h2>Key Features</h2>
+        <p>
+            • Detailed event logging and timeline tracking<br>
+            • Secure document scanning and storage<br>
+            • Communications record keeping<br>
+            • Sworn declaration support<br>
+            • Comprehensive preparation checklists<br>
+            • Complete offline functionality
+        </p>
+
+        <h2>Privacy First</h2>
+        <p>
+            Your privacy and data security are our top priorities. FedNote operates completely offline, ensuring all your sensitive information stays solely on your device. No cloud storage, no data collection, no external connections - just secure, local documentation you can trust.
+        </p>
+
+        <h2>Availability</h2>
+        <p>
+            Coming soon to the iOS App Store. Sign up for our notification list to be informed when FedNote launches.
+        </p>
     </main>
 
-    <footer class="fixed bottom-0 w-full text-white py-4">
-        <div class="container mx-auto px-6 text-center">
-            <p>Contact us at fednote@yahoo.com | Follow us on X</p>
-        </div>
+    <footer>
+        Contact us at <a href="mailto:fednote@yahoo.com">fednote@yahoo.com</a> | 
+        Follow us on <a href="https://twitter.com/FedNoteApp" target="_blank">X</a>
     </footer>
 </body>
 </html>
