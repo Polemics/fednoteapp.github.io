@@ -1,61 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - FedNote</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>FedNote - Privacy Policy</title>
     <style>
         body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
             background-color: rgb(83, 103, 148);
-            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #E8E8E8;
         }
-        nav {
-            background-color: rgb(63, 83, 128);
+
+        header {
+            background: rgba(0,0,0,0.3);
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
+
+        nav a {
+            color: #E8E8E8;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
         footer {
-            background-color: rgb(63, 83, 128);
+            text-align: center;
+            background: rgba(0,0,0,0.3);
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #E8E8E8;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <nav class="text-white py-4">
-        <div class="container mx-auto px-6">
-            <div class="flex justify-center space-x-8">
-                <a href="index.html" class="hover:text-gray-300">Home</a>
-                <a href="apps.html" class="hover:text-gray-300">Apps</a>
-                <a href="privacy.html" class="hover:text-gray-300">Privacy Statement</a>
-            </div>
-        </div>
-    </nav>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="apps.html">Apps</a>
+            <a href="privacy.html">Privacy Statement</a>
+        </nav>
+    </header>
 
-    <main class="container mx-auto px-6 py-20">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-5xl font-bold mb-12">Privacy Policy</h1>
-            <p class="text-xl leading-relaxed mb-8">
-                This Privacy Policy governs the use of software applications ("Applications") developed by FedNote, including all related tools and services.
-            </p>
-            <div class="space-y-12">
-                <div>
-                    <h2 class="text-3xl font-bold mb-4">Overview</h2>
-                    <p class="text-xl leading-relaxed">
-                        At FedNote, we take privacy seriously. Our Applications are designed as documentation tools for federal workers, with a focus on complete data privacy and security. We do not collect, store, or transmit any personal user data from these Applications.
-                    </p>
-                </div>
-                <div>
-                    <h2 class="text-3xl font-bold mb-4">User Provided Information</h2>
-                    <p class="text-xl leading-relaxed">
-                        No personal information is collected. Any data you enter into the Application remains solely on your device and is never transmitted to us or shared with third parties. If an Application includes functionality that allows you to generate documents or emails, that information is only used locally within your device and not collected by us.
-                    </p>
-                </div>
-            </div>
-        </div>
+    <main>
+        <h1>Privacy Policy</h1>
+        <p>
+            This Privacy Policy governs the use of software applications ("Applications") developed by FedNote, including all documentation and tracking tools.
+        </p>
+
+        <h2>Overview</h2>
+        <p>
+            At FedNote, we take privacy seriously. Our Applications are designed as documentation tools for federal workers navigating workforce transitions, with a focus on complete data privacy and security. We do not collect, store, or transmit any personal user data from these Applications.
+        </p>
+
+        <h2>User Provided Information</h2>
+        <p>
+            For FedNote Applications, no personal information is collected. Any data you enter into the Application (e.g., event logs, documents, communications records, or other inputs) remains solely on your device and is never transmitted to us or shared with third parties. If an Application includes functionality that allows you to generate documents or declarations from within the app, that information is only used locally within your device and not collected by us.
+        </p>
+
+        <h2>Automatically Collected Information</h2>
+        <p>
+            Our Applications do not automatically collect any information. This includes, but is not limited to, device identifiers, IP addresses, or geographic location. Any features offered are solely device-based, and no data is transmitted or stored by us.
+        </p>
+
+        <h2>Document Storage</h2>
+        <p>
+            All documents, logs, and other information created or stored in FedNote Applications remain exclusively on your device. We have no access to your data and no ability to view, collect, or transmit it.
+        </p>
+
+        <h2>Third-Party Access</h2>
+        <p>
+            We do not provide third parties access to any data that may be entered or used within our Applications. Since we do not collect or store user data, no information is shared.
+        </p>
+
+        <h2>Data Retention</h2>
+        <p>
+            Since no data is collected by us, no data is retained on our servers. Any information you enter into the Application remains solely on your device until you remove it or uninstall the Application.
+        </p>
+
+        <h2>Security</h2>
+        <p>
+            We are committed to maintaining the security of your information through a strict offline-first approach. Because we do not transmit or store your data, the security of your personal information relies on your device's security measures.
+        </p>
+
+        <h2>Changes</h2>
+        <p>
+            This Privacy Policy may be updated from time to time for any reason. Updates will be posted on this page. Your continued use of the Application after changes are posted constitutes your acceptance of the updated Privacy Policy.
+        </p>
+
+        <h2>Your Consent</h2>
+        <p>
+            By using FedNote Applications, you consent to the local processing of any user-driven information within the Application on your device. "Processing" includes using, storing, or otherwise handling the information locally on your device without transmission to us.
+        </p>
+
+        <h2>Contact Us</h2>
+        <p>
+            If you have any questions regarding privacy while using our Applications, or have questions about our practices, please contact us via email at <a href="mailto:fednote@yahoo.com">fednote@yahoo.com</a>.
+        </p>
     </main>
 
-    <footer class="fixed bottom-0 w-full text-white py-4">
-        <div class="container mx-auto px-6 text-center">
-            <p>Contact us at fednote@yahoo.com | Follow us on X</p>
-        </div>
+    <footer>
+        Contact us at <a href="mailto:fednote@yahoo.com">fednote@yahoo.com</a> | 
+        Follow us on <a href="https://twitter.com/FedNoteApp" target="_blank">X</a>
     </footer>
 </body>
 </html>
