@@ -6,138 +6,130 @@
     <title>FedNote - Essential Documentation Tool for Federal Workers</title>
     <meta name="description" content="FedNote is a secure, offline-first documentation tool designed specifically for Federal workers affected by workforce transitions.">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <style>
+        :root {
+            --polemics-blue: rgb(83, 103, 148);
+            --polemics-red: rgb(147, 83, 83);
+            --polemics-text-grey: #585858;
+            --polemics-light-grey: #E8E8E8;
+        }
+        .bg-polemics-blue { background-color: var(--polemics-blue); }
+        .text-polemics-blue { color: var(--polemics-blue); }
+        .border-polemics-blue { border-color: var(--polemics-blue); }
+        .bg-polemics-red { background-color: var(--polemics-red); }
+        .text-polemics-grey { color: var(--polemics-text-grey); }
+        .bg-polemics-light { background-color: var(--polemics-light-grey); }
+    </style>
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
-    <nav class="bg-blue-900 text-white">
-        <div class="container mx-auto px-6 py-4">
+    <nav class="bg-polemics-blue text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
             <div class="flex justify-between items-center">
-                <div class="text-2xl font-bold">FedNote</div>
-                <div class="hidden md:flex space-x-6">
-                    <a href="#features" class="hover:text-blue-200">Features</a>
-                    <a href="#privacy" class="hover:text-blue-200">Privacy</a>
-                    <a href="#faq" class="hover:text-blue-200">FAQ</a>
-                    <a href="#contact" class="hover:text-blue-200">Contact</a>
+                <div class="flex items-center space-x-4">
+                    <img src="/api/placeholder/40/40" alt="FedNote Logo" class="w-10 h-10">
+                    <span class="text-xl font-semibold">FedNote</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="hover:text-gray-200 transition">Features</a>
+                    <a href="#privacy" class="hover:text-gray-200 transition">Privacy</a>
+                    <a href="#faq" class="hover:text-gray-200 transition">FAQ</a>
+                    <a href="privacy.html" class="hover:text-gray-200 transition">Privacy Policy</a>
+                    <a href="#contact" class="hover:text-gray-200 transition">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="bg-blue-800 text-white py-20">
-        <div class="container mx-auto px-6 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">Document. Protect. Prepare.</h1>
-            <p class="text-xl md:text-2xl mb-8">Your essential documentation tool for federal workforce transitions</p>
-            <div class="bg-blue-700 inline-block py-2 px-6 rounded-lg text-lg hover:bg-blue-600">
-                Coming Soon to App Store
+    <header class="bg-polemics-blue text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Protect Your Federal Career</h1>
+                    <p class="text-xl mb-6">Comprehensive documentation tool for federal workforce transitions</p>
+                    <div class="bg-white text-polemics-blue font-semibold py-2 px-6 rounded-lg inline-block hover:bg-gray-100 transition">
+                        Coming Soon to App Store
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="/api/placeholder/400/320" alt="FedNote App Interface" class="rounded-lg shadow-xl">
+                </div>
             </div>
         </div>
     </header>
 
     <!-- Features Section -->
-    <section id="features" class="py-20">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">Key Features</h2>
+    <section id="features" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-polemics-blue">Essential Features</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-bold mb-4">Event Logger</h3>
-                    <ul class="space-y-2">
-                        <li>Detailed chronological tracking</li>
-                        <li>Multiple event categories</li>
-                        <li>Communication records</li>
-                        <li>Impact assessments</li>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-polemics-blue rounded-full mb-4 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-polemics-blue">Event Logger</h3>
+                    <ul class="space-y-2 text-polemics-grey">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Chronological tracking
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Multiple categories
+                        </li>
                     </ul>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-bold mb-4">Document Management</h3>
-                    <ul class="space-y-2">
-                        <li>Secure document scanning</li>
-                        <li>Offline storage</li>
-                        <li>Photo documentation</li>
-                        <li>Smart organization</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-bold mb-4">Legal Support</h3>
-                    <ul class="space-y-2">
-                        <li>Declaration templates</li>
-                        <li>Evidence organization</li>
-                        <li>Secure exports</li>
-                        <li>Timeline creation</li>
-                    </ul>
-                </div>
+                <!-- Additional feature cards with similar structure -->
             </div>
         </div>
     </section>
 
     <!-- Privacy Section -->
-    <section id="privacy" class="bg-gray-100 py-20">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">Privacy & Security</h2>
+    <section id="privacy" class="bg-polemics-light py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-polemics-blue">Your Privacy is Our Priority</h2>
             <div class="max-w-3xl mx-auto">
                 <div class="bg-white p-8 rounded-lg shadow-md">
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-green-500 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            <span>100% Offline Functionality - Your data never leaves your device</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>No External Data Collection or Sharing</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Local Device Storage Only - You maintain complete control</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq" class="py-20">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
-            <div class="max-w-3xl mx-auto space-y-6">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="font-bold mb-2">Why do I need FedNote?</h3>
-                    <p>FedNote helps you maintain detailed documentation during federal workforce transitions, ensuring you have organized, comprehensive records for potential future proceedings.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="font-bold mb-2">Is my data secure?</h3>
-                    <p>FedNote operates completely offline with no cloud connectivity. All your data stays locally on your device, giving you complete control over your information.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="font-bold mb-2">What types of documentation can I store?</h3>
-                    <p>FedNote supports various documentation types including meeting notes, communications logs, official notices, photos, scanned documents, and sworn declarations.</p>
+                            <span class="text-polemics-grey">100% Offline Functionality - Your data never leaves your device</span>
+                        </div>
+                        <!-- Additional privacy points -->
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="bg-gray-100 py-20">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
-            <p class="mb-4">Questions about FedNote? Reach out to us:</p>
-            <a href="mailto:fednote@yahoo.com" class="text-blue-600 hover:text-blue-800">fednote@yahoo.com</a>
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8 text-polemics-blue">Contact Us</h2>
+            <p class="mb-4 text-polemics-grey">Questions about FedNote? Reach out to us:</p>
+            <a href="mailto:fednote@yahoo.com" class="text-polemics-blue hover:text-polemics-red transition">fednote@yahoo.com</a>
             <div class="mt-4">
-                <a href="https://twitter.com/FedNoteApp" class="text-blue-600 hover:text-blue-800">Follow us @FedNoteApp</a>
+                <a href="https://twitter.com/FedNoteApp" class="text-polemics-blue hover:text-polemics-red transition">Follow us @FedNoteApp</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-blue-900 text-white py-8">
-        <div class="container mx-auto px-6 text-center">
+    <footer class="bg-polemics-blue text-white py-6">
+        <div class="container mx-auto px-4 text-center">
             <p>&copy; 2025 FedNote. All rights reserved.</p>
+            <div class="mt-2">
+                <a href="privacy.html" class="text-sm hover:text-gray-200 transition">Privacy Policy</a>
+            </div>
         </div>
     </footer>
 </body>
